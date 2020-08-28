@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+    <header>
+        <h1>TO-DO LIST</h1>
+    </header>
+    <form>
+        <label for="todo-input"></label>
+        <input class="todo-input" type="text" name="todo-input">
+        <button class="todo-btn" type="submit" name="todo-btn">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+        <!-- to be generated using JS
+            <div class="todo">
+                <li class="todo-item"></li>
+                <button class="check-button">checked</button>
+                <button class="trash-button">delete</button>
+            </div>
+            -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
